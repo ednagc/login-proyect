@@ -1,0 +1,4 @@
+LoginComponent - This will feature our social logins and a button for logging in with email, and signing up with email.
+EmailComponent - This will be the email login component.
+SignupComponent - This will allow users to signup via email.
+MembersComponent - This will serve as the protected area that authenticated users will have access to. 

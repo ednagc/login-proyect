@@ -7,14 +7,33 @@ import { AppComponent } from './app.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    LoginComponent,
+    EmailComponent,
+    SignupComponent,
+    MembersComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
-    HttpModule
+    HttpModule,
+    AngularFireModule.initializeApp(firebaseConfig)
   ],
   providers: [],
   bootstrap: [AppComponent]
 })
+
+import { AngularFireModule } from 'angularfire2';
+import { LoginComponent } from './login/login.component';
+import { EmailComponent } from './email/email.component';
+import { SignupComponent } from './signup/signup.component';
+import { MembersComponent } from './members/members.component';
+
+export const firebaseConfig = {
+  apiKey: 'AIzaSyDC3roPbtpGjvDAZyYvlf36liR67-wRGoY',
+  authDomain: 'proyecto-login-6a432.firebaseapp.com',
+  databaseURL: 'https://proyecto-login-6a432.firebaseio.com',
+  storageBucket: 'proyecto-login-6a432.appspot.com',
+  messagingSenderId: '985235231354'
+};
 export class AppModule { }
