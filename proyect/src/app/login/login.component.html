@@ -1,3 +1,15 @@
-<p>
+<div class="form-container">
+  <img src="assets/images/lock.svg" id="lock">
+
+    <span class="error" *ngIf="error">{{ error }}</span>
+
+  <!-- <button (click)="loginFb()" id="fb">Login With Facebook</button><br> -->
+  <button (click)="loginGoogle()" id="google">Login con Google</button>
+  <button routerLink="/login-email" id="email">Email</button>
+
+  <a routerLink="/signup" routerLinkActive="active" class="alc">No tienes cuneta? <strong>Create una aquí!</strong></a>
+</div>
+
+<!-- <p>
   login works!
-</p>
+</p> -->
